@@ -7,6 +7,8 @@ body {
 main {
     margin: 0 auto;
     max-width: 550px;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 button {
@@ -184,9 +186,19 @@ form button:hover {
 /*----FIM | CHECKBOX----*/
 
 footer {
+    position: fixed;
+    bottom: 40px;
+
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 550px;
+    padding-inline: 30px;
+
 }
 
 footer.visible {
